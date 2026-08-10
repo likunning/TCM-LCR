@@ -1,9 +1,9 @@
-# TCM-LCR 中医评测基准
-
-##项目简介
+# TCM-LCR 中医纵向临床推理评测基准
+## 项目简介
 TCM-LCR（中医纵向临床推理评测基准），本项目内置配套评测数据集与轻量化评测原型脚本，针对中医大模型的临床辨证、病案理解、诊疗逻辑推演能力进行标准化量化测评。
-##项目目录结构
-plaintext
+
+## 项目目录结构
+```
 ├── data/
 │   ├── Task1/
 │   │   ├── TCM_T1_mutiple_v1.json
@@ -27,23 +27,12 @@ plaintext
 ├── .gitignore
 ├── LICENSE
 └── README.md
-##目录释义
-data/：TCM-LCR 整套官方评测基准数据集，包含四大细分任务标注数据；
-evaluate/：TCM-LCR 配套评测原型脚本，内置标准化评测规则、打分逻辑与指标计算实现。
-##环境安装
-##基础依赖（选择题类任务必备）
-bash
-运行
-pip install openai
-##文本生成类评测额外依赖
-bash
-运行
-pip install rouge-chinese jieba bert-score torch
-##快速运行
-打开对应任务下的 evaluate_t*.py，修改文件头部路径、模型接口、密钥等配置参数；
-直接运行脚本启动自动化评测，示例：
-bash
-运行
-python evaluate/Task1/evaluate_t1_single.py
-##开源协议
-详细协议内容查阅项目根目录内 LICENSE 文件。
+```
+
+## 目录释义
+- `data/`：TCM-LCR 整套官方评测基准数据集，包含四大细分任务标注数据；
+- `evaluate/`：TCM-LCR 配套评测原型脚本，内置标准化评测规则、打分逻辑与指标计算实现。
+
+## 开源协议
+详细协议内容查阅项目根目录内 `LICENSE` 文件。
+
